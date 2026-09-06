@@ -1,18 +1,31 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="es">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>my-first-website</title>
   <LINK href="styles.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
 
-<img src="https://octodex.github.com/images/daftpunktocat-thomas.gif" id="octocat" alt="octocat-gif" />
+<button id="theme-toggle" aria-label="Cambiar tema">🌙</button>
 
-<!-- Change this code here by copy and pasting your template on line 15 -->
-<p>Welcome to your first GitHub Pages website!</p>
+<main class="card">
+  <img src="https://octodex.github.com/images/daftpunktocat-thomas.gif" id="avatar" alt="avatar" />
 
+  <!-- Personaliza estos datos con los tuyos -->
+  <h1>Tu Nombre</h1>
+  <p id="bio">Desarrollador/a &middot; Aprendiendo Git y GitHub 🚀</p>
+
+  <nav id="links">
+    <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="mailto:tu@email.com">Email</a>
+  </nav>
+</main>
+
+<script src="script.js"></script>
 </body>
 </html>
