@@ -4,7 +4,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>my-first-website</title>
+  <title>Clases de Español Nativo — Manuel Barrero</title>
   <LINK href="styles.css" rel="stylesheet" type="text/css">
 </head>
 
@@ -12,16 +12,40 @@
 
 <button id="theme-toggle" aria-label="Cambiar tema">🌙</button>
 
-<main class="card">
-  <img src="https://octodex.github.com/images/daftpunktocat-thomas.gif" id="avatar" alt="avatar" />
+<main>
+  <section class="hero">
+    <span class="flag">🇪🇸</span>
+    <h1>Clases de Español Nativo</h1>
+    <p class="tagline">Con Manuel Barrero — aprende español por videollamada, a tu ritmo</p>
+    <a href="#contacto" class="cta">Reservar una clase</a>
+  </section>
 
-  <h1>Manuel Barrero</h1>
-  <p id="bio">Desarrollador Full Stack</p>
+  <section class="features">
+    <h2>¿Por qué estudiar conmigo?</h2>
+    <ul>
+      <li>🗣️ <strong>Hablante nativo</strong> de español</li>
+      <li>🎯 Clases <strong>personalizadas</strong> según tu nivel y objetivos</li>
+      <li>🕒 <strong>Horarios flexibles</strong> por videollamada</li>
+      <li>📚 Para todos los niveles: desde principiante hasta avanzado</li>
+    </ul>
+  </section>
 
-  <nav id="links">
-    <a href="https://github.com/manuana75" target="_blank" rel="noopener">GitHub</a>
-    <a href="mailto:manuelbarrero1975@gmail.com">Email</a>
-  </nav>
+  <section id="contacto" class="contact">
+    <h2>Contacto</h2>
+    <p>Cuéntame qué buscas y te responderé por email.</p>
+
+    <form id="contact-form">
+      <input type="text" id="name" name="name" placeholder="Tu nombre" required />
+      <input type="email" id="email" name="email" placeholder="Tu email" required />
+      <textarea id="message" name="message" placeholder="¿Qué te gustaría aprender?" rows="4" required></textarea>
+      <button type="submit">Enviar mensaje</button>
+    </form>
+
+    <p class="direct-email">
+      También puedes escribirme directo a
+      <a href="mailto:manuelbarrero1975@gmail.com">manuelbarrero1975@gmail.com</a>
+    </p>
+  </section>
 </main>
 
 <script src="script.js"></script>

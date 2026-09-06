@@ -16,3 +16,20 @@ toggle.addEventListener("click", () => {
   applyTheme(next);
   localStorage.setItem(STORAGE_KEY, next);
 });
+
+const CONTACT_EMAIL = "manuelbarrero1975@gmail.com";
+const form = document.getElementById("contact-form");
+
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const message = document.getElementById("message").value;
+
+  const subject = `Clases de español — contacto de ${name}`;
+  const body = `${message}\n\n— ${name} (${email})`;
+
+  window.location.href =
+    `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+});
