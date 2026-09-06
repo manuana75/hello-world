@@ -75,9 +75,15 @@ section {
 .spain-icons {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 16px;
   font-size: 26px;
   margin-bottom: 28px;
+}
+
+.icon-guitar {
+  display: inline-flex;
+  color: var(--accent);
 }
 
 .cta {
