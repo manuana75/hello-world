@@ -30,6 +30,17 @@ body {
   transition: background 0.3s ease, color 0.3s ease;
 }
 
+.flag-bar {
+  height: 6px;
+  width: 100%;
+  background: linear-gradient(
+    to right,
+    #aa151b 0%, #aa151b 25%,
+    #f1bf00 25%, #f1bf00 75%,
+    #aa151b 75%, #aa151b 100%
+  );
+}
+
 main {
   max-width: 640px;
   margin: 0 auto;
@@ -58,6 +69,14 @@ section {
 .tagline {
   color: var(--muted);
   font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.spain-icons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  font-size: 26px;
   margin-bottom: 28px;
 }
 
