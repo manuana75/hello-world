@@ -120,9 +120,10 @@ h2 {
   font-weight: bold;
 }
 
-.menu-item-duration {
-  font-size: 12px;
-  color: var(--muted);
+.menu-item-price {
+  font-size: 13px;
+  font-weight: bold;
+  color: var(--accent);
 }
 
 .menu li p {
